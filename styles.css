@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Cabeçalho e navegação */
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+ul li a:hover {
+    color: #02ac10;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Galeria de Fotos */
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+
+}
+
+.foto-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(252, 252, 252);
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-container img:hover {
+    transform: scale(1.05);
+}
+
+.galeria h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #fff;
+    /* Adiciona cor branca ao título */
+}
+
+/* Resetando margens e padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* Corpo e fontes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #000000;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    /* Adiciona contexto para z-index */
+    background-image: url('imagens/Design sem nome.png');
+    /* Substitua pela imagem do seu banner */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+    /* Ajuste para garantir que o banner ocupe 100% da altura da tela */
+    overflow: hidden;
+    /* Garante que o conteúdo não sobreponha indevidamente */
+}
+
+.banner img {
+    display: none;
+    /* Oculta a imagem diretamente, pois ela está sendo controlada pela imagem de fundo */
+}
+
+.banner h1,
+.banner p {
+    position: relative;
+    /* Adiciona contexto de posicionamento */
+    z-index: 1;
+    /* Garante que o título e parágrafo fiquem acima da imagem de fundo */
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+/* Galeria */
+.galeria {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.galeria h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.foto-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Serviços */
+.servicos {
+    background-color: #097c1c;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.servico {
+    margin-bottom: 30px;
+}
+
+.servico h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 1.1em;
+}
+
+/* Sobre */
+.sobre {
+    background-color: #000000;
+    color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/*contato*/
+ .contato{
+    text-align: center;
+    color: #dddddd;
+ }
+.contato ul {
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    color: #dddddd;
+}
+
+.contato ul li {
+    margin: 15px 0;
+}
+
+.contato ul li a {
+    color: #dddddd;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.contato ul li a:hover {
+    color: #00ff2a;
+}
+
+.contato ul li a i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
